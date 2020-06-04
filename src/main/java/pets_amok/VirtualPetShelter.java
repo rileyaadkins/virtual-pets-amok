@@ -34,6 +34,11 @@ public class VirtualPetShelter {
             if (pet instanceof Organic)((Organic) pet).feed();
     }
 
+    public void waterAllPets() {
+        for (VirtualPet pet : petList.values())
+            if (pet instanceof Organic)((Organic) pet).water();
+    }
+
 //    public void walkAllDogs() {
 ////        for (VirtualPet pet : petList.values())
 ////            pet.walk();
@@ -55,6 +60,13 @@ public class VirtualPetShelter {
                 System.out.println("You Played With " + petName);
             }
         }
+    }
+
+    public void tickAll(){
+        for (VirtualPet pet : petList.values()){
+            pet.tick();
+        }
+
     }
 
 

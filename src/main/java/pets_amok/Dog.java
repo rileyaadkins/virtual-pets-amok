@@ -20,28 +20,38 @@ public class Dog extends VirtualPet implements Organic {
 
     @Override
     public void feed() {
+        hunger -= 3;
 
     }
 
     @Override
     public void water() {
+        thirst -= 2;
 
     }
 
     @Override
     public void cleanCrate() {
+        crateCleanness -=  2;
 
+    }
+
+    @Override
+    public void tick() {
+        hunger += 3;
+        thirst += 2;
+        waste += 1;
     }
 
 
     @Override
     public int getHunger() {
-        return hunger -= 3;
+        return hunger;
     }
 
     @Override
     public int getThirst() {
-        return thirst -=2;
+        return thirst;
     }
 
     @Override

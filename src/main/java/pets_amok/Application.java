@@ -20,7 +20,10 @@ public class Application {
     }
 
     private static void gameLoop() {
-        gameActions();
+        while (true) {
+            gameActions();
+            shelter.tickAll();
+        }
     }
 
     private static void welcomeMessage() {
@@ -72,11 +75,11 @@ public class Application {
                 shelter.feedAllPets();
                 showPets();
                 break;
-//            case 2:
-//                shelter.cuddleAllPets();
-//                showPets();
-//                break;
-//            case 3:
+            case 2:
+                shelter.waterAllPets();
+                showPets();
+                break;
+////            case 3:
 //                pickAPet();
 //                break;
 //            case 4:

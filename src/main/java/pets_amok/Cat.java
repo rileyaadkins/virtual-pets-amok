@@ -26,14 +26,20 @@ public class Cat extends VirtualPet implements Organic {
 
     @Override
     public void water() {
-
+        thirst -= 3;
     }
 
     @Override
     public void cleanCrate() {
-
+        crateCleanness -= 3;
     }
 
+    @Override
+    public void tick() {
+        hunger += 3;
+        thirst += 2;
+        waste += 1;
+    }
 
     @Override
     public int getHunger() {
@@ -54,8 +60,6 @@ public class Cat extends VirtualPet implements Organic {
     public int getCrateCleanness() {
         return crateCleanness;
     }
-
-
 
 
 }
