@@ -79,7 +79,7 @@ public class Application {
                 shelter.waterAllPets();
                 showPets();
                 break;
-////            case 3:
+//            case 3:
 //                pickAPet();
 //                break;
 //            case 4:
@@ -88,10 +88,10 @@ public class Application {
 //            case 5:
 //                admitAPet();
 //                break;
-//            case 6:
-//                System.out.println("♥ Thanks For Visiting The Virtual Pet Shelter! ♥");
-//                System.exit(0);
-//        }
+            case 6:
+                System.out.println("♥ Thanks For Visiting The Virtual Pet Shelter! ♥");
+                System.exit(0);
+        }
         }
 
 
